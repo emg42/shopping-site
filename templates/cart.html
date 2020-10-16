@@ -13,18 +13,18 @@
         </tr>
         </thead>
         <tbody>
-            {% for melon in cart%}
+            {% for melon in cart %}
             <tr>
-                <td>{{melon.common_name}}</td>
-                <td>{{melon_qty}}</td>
-                <td>{{melon.price}}</td>
-                <td>{{melon.melon_cost</td>
+                <td>{{ melon.common_name }}</td>
+                <td>{{ quantity }}</td>
+                <td>{{ melon.price }}</td>
+                <td>{{ melon_cost }}</td>
             </tr>
-            {% end for %}
+            {% endfor %}
         </tbody>
     </table>
 
-    <h3>Total: $27.00</h3>
+    <h3>Total: {{ total_cost }}</h3>
 
     <a href="/checkout" class="btn btn-large btn-primary">Check Out</a>
 
